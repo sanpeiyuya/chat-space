@@ -6,6 +6,8 @@
     height: 100px;
     line-height: 100px;
     padding: 0 20px;
+    display: flex;
+    align-items: center;
     &__name {
       display: inline-block;
       font-size: $side_header_font;
@@ -13,7 +15,8 @@
     }
     &__lists {
       display: inline-block;
-      float: right;
+      padding: 0 0 0 180px;
+
       .list {
         display: inline-block;
       }
@@ -27,14 +30,17 @@
   .groups {
     background-color: $side_blue_light;
     height: calc(100vh - 100px);
+    width: 300px;
     padding: 0 20px;
     overflow: scroll;
     .group {
       padding: 20px 0 40px;
       &__name {
+        color: $white;
         font-size: $side_group_name;
       }
       &__message {
+        color: $white;
         font-size: $side_group_message;
         margin-top: 5px;
       }
