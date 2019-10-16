@@ -35,14 +35,16 @@
     overflow: scroll;
     .group {
       padding: 20px 0 40px;
+      text-decoration: none;
+      color: $white;
       &__name {
-        color: $white;
         font-size: $side_group_name;
+        text-decoration: none;
       }
       &__message {
-        color: $white;
         font-size: $side_group_message;
         margin-top: 5px;
+        text-decoration: none;
       }
     }
   }
