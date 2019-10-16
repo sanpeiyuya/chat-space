@@ -12,7 +12,7 @@
           = "Menbers: #{@members}"
       .right-header
         .right-header__button
-          = link_to "Edit", edit_group_path(@group.id)
+          = link_to "Edit", edit_group_path(@group.id),class:"right-header__button__edit"
     .messages
       = render partial: 'message', collection: @messages
     .form

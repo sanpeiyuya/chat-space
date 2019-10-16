@@ -36,6 +36,10 @@
       padding: 0 20px;
       position: absolute;
       right: 40px;
+      &__button__edit{
+        color: $light_blue;
+        text-decoration: none;
+      }
     }
   }
 
