@@ -1,5 +1,5 @@
 $(function(){ 
-  function buildHTML(message) {
+  function buildHTML(message){
     var content = message.content ? `${ message.content }` : "";
     var imge = message.image ? `<img src= ${ message.image }>` : "";
     var html = `<div class="message" data-message-id="${message.id}">
@@ -20,10 +20,10 @@ $(function(){
                     ${imge}
                   </p>
                 </div>`
-  return html;
+      return html;
   }
- 
- $('#new_message').on('submit', function(e){
+
+  $('#new_message').on('submit', function(e){
   e.preventDefault();
   var formData = new FormData(this);
   var url = $(this).attr('action')
@@ -41,9 +41,9 @@ $(function(){
       $('.messages').animate({scrollTop: $('.messages')[0].scrollHeight}, 'fast');
       $('form')[0].reset();
     })
-      .fail(function(){
+    .fail(function(){
       alert('error');
       });
     return false;
- });
+  });
 });
